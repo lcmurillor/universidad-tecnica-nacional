@@ -1,0 +1,53 @@
+<mat-card>
+    <!-- paso 1 -->
+    <form [formGroup]="userForm.baseForm1">
+        <ng-template matStepLabel>Ingrese su informacion personal</ng-template>
+        <mat-form-field class="input">
+            <mat-label>Cedula</mat-label>
+            <input matInput formControlName="identity" placeholder="1044044" required type="text">
+        </mat-form-field><br>
+        <mat-form-field class="input">
+            <mat-label>Nombre completo</mat-label>
+            <input matInput formControlName="full_name" required type="text">
+        </mat-form-field><br>
+        <mat-form-field class="input">
+            <mat-label>Fecha de nacimiento</mat-label>
+            <input matInput formControlName="birthday" placeholder="12-31-2021" required type="date">
+        </mat-form-field><br>
+        <mat-form-field class="input">
+            <mat-label>Telefono</mat-label>
+            <input matInput formControlName="phone" placeholder="84447777" required type="text">
+        </mat-form-field><br>
+    </form>
+
+    <!-- paso 2 -->
+
+    <form [formGroup]="userForm.baseForm1">
+        <ng-template matStepLabel>Cree una cuenta de usuario</ng-template>
+        <mat-form-field class="input">
+            <mat-label>Correo electronico</mat-label>
+            <input matInput formControlName="email" placeholder="nombre@correo.com" required type="email">
+        </mat-form-field><br>
+        <mat-form-field class="input">
+            <mat-label>Contraseña</mat-label>
+            <input matInput formControlName="password" required type="password">
+        </mat-form-field><br>
+        <mat-form-field class="input">
+            <mat-label>Validar Contraseña</mat-label>
+            <input matInput formControlName="password" required type="password">
+        </mat-form-field> <br>
+    </form>
+
+    <!-- paso 3 -->
+
+    <form [formGroup]="userForm.baseForm1">
+        <ng-template matStepLabel>Ingrese su imagen</ng-template>
+        <!-- <div>
+            <img [src]="url" height="200">
+        </div> -->
+        <!-- <input type='file' formControlName="photo" (change)='onSelectFile($event)'> -->
+        <div>
+            <button class="btn" mat-button (click)="modificar()"> Guardar</button>
+        </div>
+    </form>
+</mat-card>

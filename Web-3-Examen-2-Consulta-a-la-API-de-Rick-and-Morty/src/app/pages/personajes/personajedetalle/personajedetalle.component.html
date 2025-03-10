@@ -1,0 +1,45 @@
+<h1>{{data?.titulo}}</h1>
+<mat-dialog-content>
+    <div class="modal-form">
+        <form [formGroup]="formato" >
+            <!-- ID -->
+            <mat-form-field class="full-width-input">
+                <input matInput placeholder="Id" formControlName="id" type="text" />
+            </mat-form-field>
+            <!--NAME  -->
+            <mat-form-field class="full-width-input">
+                <input matInput placeholder="Nombre" formControlName="name" type="text" />
+            </mat-form-field>
+            <!-- STATUS -->
+            <mat-form-field class="full-width-input" >
+                <mat-label>Estado</mat-label>
+                <mat-select formControlName="status">
+                    <mat-option value="Alive">Vivo</mat-option>
+                    <mat-option value="Dead">Muero</mat-option>
+                    <mat-option value="unknown">Desconocido</mat-option>
+                </mat-select>
+            </mat-form-field>
+            <!-- SPECIES -->
+            <mat-form-field class="full-width-input" >
+                <mat-select formControlName="species">
+                    <mat-option value="Alien">Alien</mat-option>
+                    <mat-option value="Human">Humano</mat-option>
+                </mat-select>
+            </mat-form-field>
+            <!-- GENDER -->
+            <mat-form-field class="full-width-input">
+                <mat-label>Genero</mat-label>
+                <mat-select formControlName="gender">
+                    <mat-option value="Male">Hombre</mat-option>
+                    <mat-option value="Female">Mujer</mat-option>
+                    <mat-option value="unknown">Desconocido</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </form>
+        <!-- IMG -->
+        <div>
+             <img [src]="image" class="ImgenEstilo">
+        </div>
+       
+    </div>
+</mat-dialog-content>

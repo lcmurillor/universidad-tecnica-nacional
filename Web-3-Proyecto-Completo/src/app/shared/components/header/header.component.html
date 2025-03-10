@@ -1,0 +1,19 @@
+<mat-toolbar class="header-color">
+    <span mat-button [routerLink]="['/home']">Logo</span>
+    <span class="spacertwo"></span>
+    <form class="form-inline">
+        <input class="form-control" type="search" placeholder="Busca algo de comer" aria-label="Search">
+    </form>
+    <span class="spacer"></span>
+    <div>
+        <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+            <mat-icon class="icon">account_circle</mat-icon>
+        </button>
+        <mat-menu  #menu="matMenu">
+            <button mat-menu-item *ngIf="_isLogin" [routerLink]="['/update-user']">Ver perfil</button>
+            <button mat-menu-item *ngIf="_isLogin" [routerLink]="['/new-restaurant']">Agregar Restaurante</button>
+            <button mat-menu-item *ngIf="!_isLogin" (click)="openModal()">Iniciar Sesión</button>
+            <button mat-menu-item *ngIf="_isLogin" (click)="logout()" >Salir</button>
+        </mat-menu>
+    </div>
+</mat-toolbar>

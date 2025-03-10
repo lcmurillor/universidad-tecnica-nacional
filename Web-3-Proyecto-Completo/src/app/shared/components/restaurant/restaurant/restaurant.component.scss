@@ -1,0 +1,31 @@
+.check-box {
+    margin: 12px 0;
+    
+}
+::ng-deep .mat-checkbox .mat-checkbox-frame {
+    border-color: black;
+  }
+
+.mat-form-field {
+    margin-right: 3px;
+}
+  
+.col-md-3{
+    border-color: black;
+}
+
+.row-body{
+    background-color: cadetblue;
+}
+
+.contenedor{
+    background: rgba(27, 27, 24, 0.47);
+    height: 33%;
+    width: 100%;
+    //IMPORTANTE/
+  //    display: flex;
+  //    justify-content: center;
+  //   align-items: center;
+  }
+
+

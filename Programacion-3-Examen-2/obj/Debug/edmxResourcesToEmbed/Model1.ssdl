@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ExamenModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="ListaAirbnb">
+    <Key>
+      <PropertyRef Name="IdLocal" />
+    </Key>
+    <Property Name="IdLocal" Type="int" Nullable="false" />
+    <Property Name="DescripcionCabina" Type="nvarchar" MaxLength="300" Nullable="false" />
+    <Property Name="IdDueno" Type="int" Nullable="false" />
+    <Property Name="NombreDueno" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="TipoCuarto" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Moneda" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Precio" Type="smallint" Nullable="false" />
+    <Property Name="NochesMinimas" Type="tinyint" Nullable="false" />
+    <Property Name="NumeroReviews" Type="tinyint" Nullable="false" />
+    <Property Name="ReviewsPorMes" Type="float" Nullable="false" />
+    <Property Name="habitables365" Type="smallint" Nullable="false" />
+    <Property Name="Ciudad" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Estado" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Pais" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="ExamenModelStoreContainer">
+    <EntitySet Name="ListaAirbnb" EntityType="Self.ListaAirbnb" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

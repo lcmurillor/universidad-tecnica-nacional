@@ -1,0 +1,6 @@
+C:\Users\Nebura\OneDrive - Universidad Técnica Nacional\Cuatrimestre XI\Web II\Semana 4\App4\CapaDatos\CapaDatos\obj\Debug\CapaDatos.csprojAssemblyReference.cache
+C:\Users\Nebura\OneDrive - Universidad Técnica Nacional\Cuatrimestre XI\Web II\Semana 4\App4\CapaDatos\CapaDatos\obj\Debug\CapaDatos.csproj.CoreCompileInputs.cache
+C:\Users\Nebura\OneDrive - Universidad Técnica Nacional\Cuatrimestre XI\Web II\Semana 4\App4\CapaDatos\CapaDatos\bin\Debug\CapaDatos.dll
+C:\Users\Nebura\OneDrive - Universidad Técnica Nacional\Cuatrimestre XI\Web II\Semana 4\App4\CapaDatos\CapaDatos\bin\Debug\CapaDatos.pdb
+C:\Users\Nebura\OneDrive - Universidad Técnica Nacional\Cuatrimestre XI\Web II\Semana 4\App4\CapaDatos\CapaDatos\obj\Debug\CapaDatos.dll
+C:\Users\Nebura\OneDrive - Universidad Técnica Nacional\Cuatrimestre XI\Web II\Semana 4\App4\CapaDatos\CapaDatos\obj\Debug\CapaDatos.pdb

@@ -1,0 +1,27 @@
+
+<ul ngbNav #nav="ngbNav" [(activeId)]="active" class="nav-tabs">
+      <li [ngbNavItem]="1" >
+         <a ngbNavLink>Menú</a>
+            <ng-template ngbNavContent style="text-align: center;">
+            <app-matcard></app-matcard>
+        
+             </ng-template>
+        </li>
+
+        <li [ngbNavItem]="2">
+            <a ngbNavLink>Ofertas</a>
+        <ng-template ngbNavContent>
+             <app-matcard></app-matcard>
+        </ng-template>
+    </li>
+
+</ul>    
+    <div [ngbNavOutlet]="nav"></div>
+
+
+
+  
+  
+  
+<!--   <pre>Active: {{ active }}</pre>
+ -->

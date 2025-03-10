@@ -1,0 +1,49 @@
+<h1>USERS</h1>
+<div class="mat-elevation-z8">
+    <table mat-table [dataSource]="dataSource">
+        <ng-container matColumnDef="id">
+            <th mat-header-cell *matHeaderCellDef> ID. </th>
+            <td mat-cell *matCellDef="let element"> {{element.id}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="username">
+            <th mat-header-cell *matHeaderCellDef> Username </th>
+            <td mat-cell *matCellDef="let element"> {{element.username}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="name">
+            <th mat-header-cell *matHeaderCellDef> Name </th>
+            <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="surname1">
+            <th mat-header-cell *matHeaderCellDef> First surname </th>
+            <td mat-cell *matCellDef="let element"> {{element.surname1}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="surname2">
+            <th mat-header-cell *matHeaderCellDef> Second surname </th>
+            <td mat-cell *matCellDef="let element"> {{element.surname2}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="actions">
+            <th mat-header-cell *matHeaderCellDef> Actions </th>
+            <td mat-cell *matCellDef="let element">
+                <div class="btn-actions">
+                    <button mat-flat-button class="btn-update">Update</button>
+                <button mat-flat-button class="btn-delete">Delete</button>
+                </div>
+            </td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+    <mat-paginator [pageSizeOptions]="[5, 10, 20]"
+    showFirstLastButtons 
+    aria-label="Select page of periodic elements">
+</mat-paginator>
+</div>
+<button mat-flat-button color="primary" class="btn-new" (click)="openModal()">
+    New user
+</button>

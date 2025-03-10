@@ -1,0 +1,30 @@
+    <mat-toolbar color="primary">
+        <div fxShow="true" fxHide.gt-sm="true">
+            <button mat-icon-button (click)="sidenav.toggle()">
+                <mat-icon>menu</mat-icon>
+            </button>
+        </div>
+        <samp>MY PROYECT</samp>
+        <samp Class="spaced"></samp>
+        <div fxShow="true" fxHide.lt-md="false">
+            <a mat-button [routerLink]="'home'">Home</a>
+            <a mat-button [routerLink]="'clients'">Clients</a>
+            <a mat-button [routerLink]="'users'">Users</a>
+            <a mat-button [routerLink]="''">login</a>
+            <a mat-button [routerLink]="''">logout</a>
+        </div>
+    </mat-toolbar>
+    <mat-sidenav-container fxFlexFill class="container">
+        <mat-sidenav color="primary" #sidenav fxLayout="column" mode="over" opened="false" fxHide.gt-sm="true">
+            <div fxLayout="column">
+                <a mat-button [routerLink]="'home'">Home</a>
+                <a mat-button [routerLink]="'clients'">Clients</a>
+                <a mat-button [routerLink]="'users'">Users</a>
+                <a mat-button [routerLink]="''">login</a>
+                <a mat-button [routerLink]="''">logout</a>
+            </div>
+        </mat-sidenav>
+        <mat-sidenav-content fxFlexFill>
+            <router-outlet></router-outlet>
+        </mat-sidenav-content>
+    </mat-sidenav-container>

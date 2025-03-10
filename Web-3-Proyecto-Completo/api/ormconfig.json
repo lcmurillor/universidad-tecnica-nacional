@@ -1,0 +1,47 @@
+{
+
+   "type": "mysql",
+
+   "host": "MYSQL5045.site4now.net",
+
+   "port": 3306,
+
+   "username": "a78b99_web2021",
+
+   "password": "web32021",
+
+   "database": "db_a78b99_web2021",
+
+   "synchronize": true,
+
+   "logging": false,
+
+   "entities": [
+
+      "src/entity/**/*.ts"
+
+   ],
+
+   "migrations": [
+
+      "src/migration/**/*.ts"
+
+   ],
+
+   "subscribers": [
+
+      "src/subscriber/**/*.ts"
+
+   ],
+
+   "cli": {
+
+      "entitiesDir": "src/entity",
+
+      "migrationsDir": "src/migration",
+
+      "subscribersDir": "src/subscriber"
+
+   }
+
+}

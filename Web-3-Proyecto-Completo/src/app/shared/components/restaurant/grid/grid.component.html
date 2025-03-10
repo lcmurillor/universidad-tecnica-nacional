@@ -1,0 +1,40 @@
+<div class="contenedor">
+  <app-slider></app-slider>
+  <div class="row border-top">
+    
+    <div class="col-md-6 border-right">
+      <h1>{{rest.name}}</h1>
+      
+      <!-- <div class="row">n
+        
+      </div> -->
+      
+      <div class="row border-top">
+        <div class="col-md-4" style="padding-top: 1rem;">
+          <mat-icon class="icon-place">place</mat-icon>
+        </div>
+        <div class="col-md-8" style="text-align: start; padding-top: 1rem;">
+          <span>{{rest.address}} </span>
+        </div>  
+      </div>
+    </div>
+    
+
+    <div class="col-md-6" style="text-align: start;">
+
+      <div><mat-icon class="icon-facebook">facebook</mat-icon> <span href ="https://www.facebook.com/Foodnication.cr" style="padding-left: 3rem;"></span>{{rest.name}}.cr</div>
+      <div><mat-icon class="icon-phone">phone</mat-icon><span style="padding-left: 3rem;"> +506 {{rest.phone_number}}</span></div>
+      <div><mat-icon class="icon-whatsapp">whatsapp</mat-icon><span style="padding-left: 3rem;"> +506 {{rest.user_phone}}</span></div> 
+    </div>
+
+    <div class="row" style="padding-left: 2rem;">
+      <div class="col-md-12 border-top border-black"> 
+        <app-navmenu></app-navmenu>
+      </div>
+    </div>  
+  </div>
+</div>  
+   
+
+
+    

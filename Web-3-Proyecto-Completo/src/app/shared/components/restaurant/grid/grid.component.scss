@@ -1,0 +1,54 @@
+.mat-grid-tile{
+    border: black;
+}
+
+.border-right {
+    border-right: 1px solid #ddd;
+}
+.borders {
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    margin: -1px;
+}
+.border-left {
+    border-left: 1px solid #ddd;
+}
+
+.row {
+    text-align: center;
+}
+
+.border-top {
+    border-top: 1px solid #ddd;
+    //padding-left: 12px;
+} 
+
+.icon-facebook{
+    padding-top: 6%;
+    font-size: 300%;
+    color: blue;
+}
+
+.icon-whatsapp{
+    padding-top: 6%;
+    font-size: 300%;
+    color: green;
+}
+
+.icon-phone{
+    padding-top: 6%;
+    font-size: 300%;
+}
+
+.icon-place{
+    padding-top: 5%;
+    font-size: 380%;
+    color: red;
+}
+
+.estilo-x {
+    font-size: calc(1em + 1vw);
+    line-height: 1em;
+    padding: 1em;
+    margin: 1em;}
+

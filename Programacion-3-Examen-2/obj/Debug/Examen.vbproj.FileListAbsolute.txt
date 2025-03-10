@@ -1,0 +1,17 @@
+C:\Users\Luis Carlos\OneDrive\Documentos UTN\Programación III\Semana 13\Examen\bin\Debug\Examen.exe.config
+C:\Users\Luis Carlos\OneDrive\Documentos UTN\Programación III\Semana 13\Examen\bin\Debug\Examen.exe
+C:\Users\Luis Carlos\OneDrive\Documentos UTN\Programación III\Semana 13\Examen\bin\Debug\Examen.pdb
+C:\Users\Luis Carlos\OneDrive\Documentos UTN\Programación III\Semana 13\Examen\bin\Debug\Examen.xml
+C:\Users\Luis Carlos\OneDrive\Documentos UTN\Programación III\Semana 13\Examen\bin\Debug\EntityFramework.dll
+C:\Users\Luis Carlos\OneDrive\Documentos UTN\Programación III\Semana 13\Examen\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Luis Carlos\OneDrive\Documentos UTN\Programación III\Semana 13\Examen\bin\Debug\EntityFramework.xml
+C:\Users\Luis Carlos\OneDrive\Documentos UTN\Programación III\Semana 13\Examen\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Luis Carlos\OneDrive\Documentos UTN\Programación III\Semana 13\Examen\obj\Debug\Examen.vbprojAssemblyReference.cache
+C:\Users\Luis Carlos\OneDrive\Documentos UTN\Programación III\Semana 13\Examen\obj\Debug\Examen.Form1.resources
+C:\Users\Luis Carlos\OneDrive\Documentos UTN\Programación III\Semana 13\Examen\obj\Debug\Examen.Resources.resources
+C:\Users\Luis Carlos\OneDrive\Documentos UTN\Programación III\Semana 13\Examen\obj\Debug\Examen.vbproj.GenerateResource.cache
+C:\Users\Luis Carlos\OneDrive\Documentos UTN\Programación III\Semana 13\Examen\obj\Debug\Examen.vbproj.CoreCompileInputs.cache
+C:\Users\Luis Carlos\OneDrive\Documentos UTN\Programación III\Semana 13\Examen\obj\Debug\Examen.vbproj.CopyComplete
+C:\Users\Luis Carlos\OneDrive\Documentos UTN\Programación III\Semana 13\Examen\obj\Debug\Examen.exe
+C:\Users\Luis Carlos\OneDrive\Documentos UTN\Programación III\Semana 13\Examen\obj\Debug\Examen.xml
+C:\Users\Luis Carlos\OneDrive\Documentos UTN\Programación III\Semana 13\Examen\obj\Debug\Examen.pdb

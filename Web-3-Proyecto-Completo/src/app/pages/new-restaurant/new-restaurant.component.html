@@ -1,0 +1,117 @@
+<mat-card>
+
+  <mat-horizontal-stepper linear>
+    <!-- paso 1 -->
+    <mat-step >
+      <form [formGroup]="restaurantForm.baseForm1">
+        <ng-template matStepLabel>Ingrese información del restaurante</ng-template>
+
+        <mat-form-field class="input">
+          <mat-label class="lbl1">Cédula Jurídica</mat-label>
+          <input matInput formControlName="identity" placeholder="0123456789" required type="text">
+        </mat-form-field><br><br />
+
+        <mat-form-field class="input">
+          <mat-label class="lbl1">Nombre</mat-label>
+          <input matInput formControlName="name" required type="text">
+        </mat-form-field><br><br />
+
+        <mat-form-field class="input">
+          <mat-label class="lbl1">id Usuario</mat-label>
+          <input matInput formControlName="user" required type="text">
+        </mat-form-field><br><br />
+
+        <mat-form-field class="input">
+          <mat-label class="lbl1">Dirección</mat-label>
+          <input matInput formControlName="address" required type="text">
+        </mat-form-field><br><br />
+
+        <mat-form-field appearance="fill" class="type">
+          <mat-label class="lbl">Hora de apertura</mat-label><br>
+          <input matInput formControlName="open_time" required type="time">
+        </mat-form-field> &nbsp;
+
+        <mat-form-field appearance="fill" class="type">
+          <mat-label class="lbl">Hora de cierre</mat-label><br>
+          <input matInput formControlName="close_time" required type="time">
+        </mat-form-field> &nbsp;
+
+        <mat-form-field appearance="fill" class="type">
+          <mat-label class="lbl">Tipo de restaurante</mat-label><br>
+          <select matNativeControl formControlName="business_type" required [formGroup]="restaurantForm.baseForm1">
+            <option label="--select something --"></option>
+            <option value=1>Opción 1</option>
+            <option value=2>Opción 2</option>
+            <option value=3>Opción 3</option>
+          </select>
+        </mat-form-field><br><br>
+
+        <div>
+          <button class="btn" mat-button matStepperNext>Siguente</button> <br><br>
+          <button class="btn-delete" mat-raised-button mat-button [routerLink]="['/home']">Cancelar</button>
+        </div>
+      </form>
+    </mat-step>
+    <!-- paso 2 -->
+
+    <mat-step >
+      <form [formGroup]="restaurantForm.baseForm1">
+        <ng-template matStepLabel>Agregar contacto</ng-template>
+
+        <mat-form-field class="contacto">
+          <mat-label class="lbl">Telefono</mat-label><br>
+          <input matInput formControlName="tel" placeholder="84447777" required type="text">
+        </mat-form-field><br>
+        <!-- <mat-form-field class="input">
+          <mat-label class="lbl">Telefono</mat-label><br>
+          <input matInput formControlName="tel" placeholder="84447777" required type="text">
+        </mat-form-field> -->
+      
+
+
+
+
+        <!-- <div class="restaurantForm.baseForm2">
+
+            <div formArrayName="telefonos">
+             <div *ngFor="let item of getTelefonos.controls; let pointIndex=index" [formGroupName]="pointIndex">
+               <input  matInput formControlName="telefono"/> 
+                <a class="btn btn-link"(click)="removeTelefono(pointIndex)">Quitar</a>
+              </div>
+           </div>
+           <a class="btn btn-link" (click)="addTelefono()">Agregar</a>
+        </div> -->
+
+
+        <div>
+          <button class="btn1" mat-button matStepperPrevious> Anterior</button>
+          &nbsp;&nbsp;
+          <button class="btn1" mat-button matStepperNext>Siguente</button> <br><br><br>
+          <button mat-raised-button class="btn-delete" mat-button [routerLink]="['/home']">Cancelar</button>
+          
+        </div>
+      </form>
+    </mat-step>
+
+
+
+    <!-- paso 3 -->
+    <mat-step>
+
+      <form [formGroup]="restaurantForm.baseForm1">
+        <ng-template matStepLabel>Agregar imagen</ng-template>
+        <div>
+          <img class="foto" [src]="url" height="201">
+        </div>
+        <br><br>
+        <input type='file'  class="select" formControlName="img" (change)='onSelectFile($event)' />
+        <div><br>      
+          <button class="btn" mat-button matStepperPrevious> Anterior</button>&nbsp;
+          <button class="btn" mat-button (click)="guardar()"> Guardar</button>  &nbsp;
+          <button mat-raised-button class="btn-delete" mat-button [routerLink]="['/home']">Cancelar</button>
+        </div>
+      </form>
+    </mat-step>
+  
+  </mat-horizontal-stepper>
+</mat-card>

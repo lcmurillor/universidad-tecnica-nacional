@@ -1,0 +1,29 @@
+.spacer{
+    flex: 1 1 auto
+}
+.mat-toolbar{
+    height: 7vh;
+  }
+  
+  div {
+      overflow: inherit;
+  }
+  
+  .mat-sidenav-container{
+      height: 100%;
+  }
+  
+  a{
+      text-decoration: none;
+      font-size: 110%;
+      white-space: normal;
+  }
+  
+  button{
+      font-size: 110%;
+      min-width: min-content;
+  }
+  
+  .icon {
+      padding: 0 14px;
+  }

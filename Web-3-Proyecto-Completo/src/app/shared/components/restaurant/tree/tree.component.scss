@@ -1,0 +1,12 @@
+.check-box {
+    margin: 12px 0;
+    
+}
+::ng-deep .mat-checkbox .mat-checkbox-frame {
+    border-color: black;
+  }
+
+.mat-tree, .mat-tree-node, .checklist-leaf-node{
+    background: white;
+    color: black;
+}

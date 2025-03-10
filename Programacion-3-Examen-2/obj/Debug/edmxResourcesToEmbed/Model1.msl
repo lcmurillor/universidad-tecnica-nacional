@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ExamenModelStoreContainer" CdmEntityContainer="ExamenEntities">
+    <EntitySetMapping Name="ListaAirbnb">
+      <EntityTypeMapping TypeName="ExamenModel.ListaAirbnb">
+        <MappingFragment StoreEntitySet="ListaAirbnb">
+          <ScalarProperty Name="IdLocal" ColumnName="IdLocal" />
+          <ScalarProperty Name="DescripcionCabina" ColumnName="DescripcionCabina" />
+          <ScalarProperty Name="IdDueno" ColumnName="IdDueno" />
+          <ScalarProperty Name="NombreDueno" ColumnName="NombreDueno" />
+          <ScalarProperty Name="TipoCuarto" ColumnName="TipoCuarto" />
+          <ScalarProperty Name="Moneda" ColumnName="Moneda" />
+          <ScalarProperty Name="Precio" ColumnName="Precio" />
+          <ScalarProperty Name="NochesMinimas" ColumnName="NochesMinimas" />
+          <ScalarProperty Name="NumeroReviews" ColumnName="NumeroReviews" />
+          <ScalarProperty Name="ReviewsPorMes" ColumnName="ReviewsPorMes" />
+          <ScalarProperty Name="habitables365" ColumnName="habitables365" />
+          <ScalarProperty Name="Ciudad" ColumnName="Ciudad" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+          <ScalarProperty Name="Pais" ColumnName="Pais" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

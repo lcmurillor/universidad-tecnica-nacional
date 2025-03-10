@@ -1,0 +1,17 @@
+.check-box {
+    margin: 12px 0;
+    
+}
+::ng-deep .mat-checkbox .mat-checkbox-frame {
+    border-color: black;
+  }
+
+.img-restaurant{
+    width: 300px;
+    height: 300px;
+}
+
+.color-info-restaurant{
+    background-color: rgba(128, 128, 128, 0.047);
+    color: black;
+}

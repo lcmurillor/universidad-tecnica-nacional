@@ -1,0 +1,21 @@
+table {
+    width: 100%;
+  }
+
+.btn-new{
+  margin: 12px;
+  width: 20%;
+}
+.btn-actions button{
+  margin-right: 12px;
+}
+
+.btn-update{
+  background-color: green;
+  color: white;
+}
+
+.btn-delete{
+  background-color: red;
+  color: white;
+}

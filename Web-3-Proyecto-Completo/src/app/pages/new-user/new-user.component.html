@@ -1,0 +1,72 @@
+<mat-card>
+  <mat-horizontal-stepper linear>
+    <!-- paso 1 -->
+    <mat-step>
+      <form [formGroup]="userForm.baseForm1">
+        <ng-template matStepLabel>Ingrese su informacion personal</ng-template>
+        <mat-form-field class="full-width-input">
+          <mat-label>Cedula</mat-label>
+          <input class="input" matInput formControlName="identity" placeholder="1044044" required type="text">
+        </mat-form-field>
+        <mat-form-field class="full-width-input">
+          <mat-label>Nombre completo</mat-label>
+          <input matInput formControlName="full_name" required type="text">
+        </mat-form-field>
+        <mat-form-field class="full-width-input">
+          <mat-label>Fecha de nacimiento</mat-label>
+          <input matInput formControlName="birthday" placeholder="12-31-2021" required type="date">
+        </mat-form-field>
+        <mat-form-field class="full-width-input">
+          <mat-label>Telefono</mat-label>
+          <input matInput formControlName="phone" placeholder="84447777" required type="text">
+        </mat-form-field><br><br><br><br>
+        <div>
+          <button class="btn" mat-button matStepperNext>Siguente</button>&nbsp;
+          <button mat-raised-button class="btn-delete" mat-button [routerLink]="['/home']">Cancelar</button>
+        </div>
+      </form>
+    </mat-step>
+    <!-- paso 2 -->
+    <mat-step>
+      <form [formGroup]="userForm.baseForm1">
+        <ng-template matStepLabel>Cree una cuenta de usuario</ng-template>
+        <mat-form-field class="full-width-input">
+          <mat-label>Correo electronico</mat-label>
+          <input matInput formControlName="email" placeholder="nombre@correo.com" required type="email">
+        </mat-form-field>
+        <mat-form-field class="full-width-input">
+          <mat-label>Contraseña</mat-label>
+          <input matInput formControlName="password" required type="password">
+        </mat-form-field>
+        <mat-form-field class="full-width-input">
+          <mat-label>Validar Contraseña</mat-label>
+          <input matInput required type="password">
+        </mat-form-field><br><br><br><br><br><br>
+        <div>
+          <button class="btn" mat-button matStepperPrevious> Anterior</button>
+          &nbsp;&nbsp;
+          <button class="btn" mat-button matStepperNext>Siguente</button>&nbsp;
+          <button mat-raised-button class="btn-delete" mat-button [routerLink]="['/home']">Cancelar</button>
+        </div>
+      </form>
+    </mat-step>
+    <!-- paso 3 -->
+    <mat-step>
+      <form [formGroup]="userForm.baseForm1">
+        <ng-template matStepLabel>Ingrese su imagen</ng-template>
+        <div>
+          <img class="foto" [src]="url" height="200">
+        </div>
+        <br><br>
+        <input type='file' class="select" formControlName="photo" (change)='onSelectFile($event)' />
+        <div><br><br>
+          <button class="btn" mat-button matStepperPrevious> Anterior</button>
+          &nbsp;&nbsp;
+          <button class="btn"mat-raised-button color="primary" mat-button (click)="guardar()" [routerLink]="['/home']"> Guardar</button>&nbsp;
+          <button mat-raised-button class="btn-delete" mat-button [routerLink]="['/home']">Cancelar</button>
+        </div>
+      </form>
+    </mat-step>
+  </mat-horizontal-stepper>
+ 
+</mat-card>
