@@ -1,4 +1,4 @@
-# Universidad Técnica Nacional (UTN) - Repositorio Oficial
+# Universidad Técnica Nacional (UTN) - Repositorio
 
 Este repositorio alberga proyectos, investigaciones y recursos desarrollados por la **Universidad Técnica Nacional (UTN)** de Costa Rica. La UTN, fundada el 4 de junio de 2008, es la quinta universidad pública del país y se dedica a ofrecer educación superior técnica y tecnológica de calidad. :contentReference[oaicite:0]{index=0}
 
@@ -9,10 +9,6 @@ A continuación, se presentan las principales carpetas y su contenido dentro de 
 - **Proyectos**: Esta carpeta contiene proyectos desarrollados por estudiantes y docentes de la UTN en diversas áreas tecnológicas y científicas.
 
 - **Investigaciones**: Aquí se encuentran documentos y resultados de investigaciones realizadas por la comunidad universitaria, abarcando múltiples disciplinas.
-
-- **Recursos Educativos**: Esta sección ofrece materiales didácticos, guías y otros recursos utilizados en la formación académica de nuestros estudiantes.
-
-- **Documentación Institucional**: Incluye documentos oficiales, informes y publicaciones relacionadas con la gestión y administración de la UTN.
 
 ## Información Adicional sobre la UTN
 
